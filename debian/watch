@@ -1,0 +1,2 @@
+version=4
+https://github.com/jonschlinkert/to-regex-range/tags .*/archive/.*/v?([\d\.]+).tar.gz

@@ -1,0 +1,30 @@
+Source: node-to-regex-range
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends: debhelper-compat (= 13),
+               mocha,
+               node-fill-range,
+               node-is-number,
+               node-repeat-string,
+               nodejs,
+               dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-to-regex-range
+Vcs-Git: https://salsa.debian.org/js-team/node-to-regex-range.git
+Homepage: https://github.com/jonschlinkert/to-regex-range
+Rules-Requires-Root: no
+
+Package: node-to-regex-range
+Architecture: all
+Depends: node-is-number,
+         node-repeat-string,
+         nodejs,
+         ${misc:Depends}
+Description: returns a regex-compatible range from two numbers, min and max
+ It comes with 855,412 generated unit tests to validate it's accuracy! Useful
+ for creating regular expressions to validate numbers, ranges, years, etc.
+ .
+ Node.js is an event-based server-side JavaScript engine.
